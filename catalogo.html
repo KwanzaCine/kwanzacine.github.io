@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KwanzaCine / Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/logo.png">
+</head>
+<body>
+<div class="headers" id="headers"> 
+    <!--<img src="../images/yuta2.jpg">-->
+     <div class="more" tabindex="0">
+<img src="images/white-menu.png">
+    </div>
+    <div class="searchBar">
+    <input type="search" id="search" placeholder="Pesquise aqui">
+    </div>
+    <p>KwanzaCine</p>
+   <img style="margin-right: 20px; margin-left:5px;" src="images/search-icon.png" onclick="campoSearch()">
+
+</div>
+<div class="ads-container">
+
+<div class="ad" style="display:none;">
+    <span id="advicer">AD</span>
+    <img src="images/ad-example.jpeg" onclick="goAD()">
+</div>
+
+</div>
+<div class="menu">
+    <h2>Menu</h2>
+    <a href="index.html" class="bright">Página Inicial</a>
+    
+    <a href="about.html" class="bright">Mais Sobre</a>
+    <a href="portfolio.html" class="bright">Quem Somos</a>
+    <a href="contacto.html" class="bright">Entre na nossa Comunidade</a>
+    <a href="ajuda.html" class="bright">Ajuda</a>
+</div>
+
+<div class="catChooser">
+<p>Filmes</p>
+<p>Séries</p>
+<p>Tudo</p>
+<p>Animes</p>
+<p>Doramas</p>
+</div>
+
+
+
+<div class="programas">
+
+    <div class="pgm" id="demon_slayer">
+        <div class="less-info">
+    <img src="images/filme1.jpg" alt="Demon SLayer: Castelo Infinito" class="poster">
+    <p class="pgmTitle">Demon Slayer: Cast...</p>
+
+    <span>Categoria: Filme</span>
+    <span id="rateText">6.7 <img src='images/star.png' id="rate"></span>
+    </div>
+    
+    <div class="more-info">
+    <img src="images/john-wick4.jpg" class="poster">
+   <p class="pgmTitle">John Wick 4</p>
+   <p class="price">2.000kz</p>
+    <div class="all-desc">
+    <p class="description">No quarto capítulo da franquia, John Wick está mais determinado do que nunca. O filme mergulha em uma jornada intensa, onde ele enfrenta desafios brutais em diferentes partes do mundo. Com cenas de ação coreografadas de forma espetacular, o longa expande ainda mais o universo sombrio dos assassinos profissionais.
+A trama explora temas como honra, liberdade e sacrifício, enquanto John precisa lidar com novas regras, figuras poderosas e escolhas que podem mudar tudo. Prepare-se para perseguições de tirar o fôlego, combates intensos e sequências visuais marcantes.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+    </div>
+
+    <div class="pgm" id="john_wick4" tabindex="0">
+        <div class="less-info">
+    <img src="images/john-wick4.jpg" alt="John Wick 4" class="poster" tabindex="0">
+    <p class="pgmTitle">John Wick 4</p>
+    <span>Categoria: Filme</span>
+    <span id="rateText">6.7 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/john-wick4.jpg" class="poster">
+   <p class="pgmTitle">John Wick 4</p>
+   <p class="price">2.000kz</p>
+    <div class="all-desc">
+    <p class="description">No quarto capítulo da franquia, John Wick está mais determinado do que nunca. O filme mergulha em uma jornada intensa, onde ele enfrenta desafios brutais em diferentes partes do mundo. Com cenas de ação coreografadas de forma espetacular, o longa expande ainda mais o universo sombrio dos assassinos profissionais.
+A trama explora temas como honra, liberdade e sacrifício, enquanto John precisa lidar com novas regras, figuras poderosas e escolhas que podem mudar tudo. Prepare-se para perseguições de tirar o fôlego, combates intensos e sequências visuais marcantes.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+<div class="pgm" id="spiderman_no_way_home">
+    <div class="less-info">
+    <img src="images/spiderman-nowayhome.jpg" alt="Spiderman: Sem Volta para Casa" class="poster">
+    <p class="pgmTitle">Spiderman: Sem...</p>
+    <span>Categoria: Filme</span>
+    <span id="rateText">6.7 <img src='images/star.png' id="rate"></span>
+    </div>
+    <div class="more-info">
+    <img src="images/spiderman-nowayhome.jpg" class="poster">
+   <p class="pgmTitle">Spiderman: Sem...</p>
+   <p class="price">2.000kz</p>
+    <div class="all-desc">
+    <p class="description">No quarto capítulo da franquia, John Wick está mais determinado do que nunca. O filme mergulha em uma jornada intensa, onde ele enfrenta desafios brutais em diferentes partes do mundo. Com cenas de ação coreografadas de forma espetacular, o longa expande ainda mais o universo sombrio dos assassinos profissionais.
+A trama explora temas como honra, liberdade e sacrifício, enquanto John precisa lidar com novas regras, figuras poderosas e escolhas que podem mudar tudo. Prepare-se para perseguições de tirar o fôlego, combates intensos e sequências visuais marcantes.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+    </div>
+
+
+
+
+<div class="pgm" id="prison-break" tabindex="0">
+        <div class="less-info">
+    <img src="images/prison-break.webp" alt="prison break" class="poster" tabindex="0">
+    <p class="pgmTitle">Prison Break</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.3 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/prison-break.webp" class="poster">
+   <p class="pgmTitle">Prison Break</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Prison Break é uma série de ação, suspense e drama que gira em torno de dois irmãos. Um deles é condenado injustamente por um crime grave e enviado para uma prisão de segurança máxima. O outro, um engenheiro brilhante, elabora um plano meticuloso para tirá-lo de lá.A história mistura inteligência, lealdade e tensão constante, explorando temas como sacrifício, justiça e o poder dos laços familiares. A trama é cheia de reviravoltas, enigmas e estratégias engenhosas, mantendo o espectador preso do começo ao fim — literalmente.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="dexter" tabindex="0">
+        <div class="less-info">
+    <img src="images/dexter.webp" alt="dexter" class="poster" tabindex="0">
+    <p class="pgmTitle">Dexter</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.6 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/dexter.webp" class="poster">
+   <p class="pgmTitle">Dexter</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Dexter é uma série de suspense psicológico e crime que acompanha a vida de Dexter Morgan, um analista forense especializado em manchas de sangue que trabalha para a polícia de Miami. Por trás de sua aparência tranquila e seu trabalho exemplar, ele esconde um segredo sombrio: uma vida dupla com um código muito particular.A série explora dilemas morais, justiça, identidade e o que realmente diferencia o bem do mal — tudo isso com muito suspense e um toque de humor negro.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="dexter-pecado-original" tabindex="0">
+        <div class="less-info">
+    <img src="images/dexter-pecado-original.webp" alt="dexter pecado original" class="poster" tabindex="0">
+    <p class="pgmTitle">Dexter Pecado Original</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.2 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/dexter-pecado-original.webp" class="poster">
+   <p class="pgmTitle">Dexter Pecado Original</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Dexter: Pecado Original (Dexter: Original Sin) é uma série derivada (prequela) do universo de Dexter. Ela mostra os primeiros anos da vida de Dexter Morgan, antes dos eventos da série original. A trama acompanha como ele começa a lidar com seus impulsos sombrios e aprende a “canalizá-los” sob o famoso “Código de Harry”, ensinado por seu pai adotivo — um policial que tenta direcionar o lado obscuro do filho para algo “menos destrutivo”.A série combina suspense, drama psicológico e investigação criminal, explorando a formação do personagem e o que o levou a se tornar o homem complexo e perturbador que conhecemos.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="dexter-new-blood" tabindex="0">
+        <div class="less-info">
+    <img src="images/dexter-new-blood.webp" alt="dexter new blood" class="poster" tabindex="0">
+    <p class="pgmTitle">Dexter New Blood</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/dexter-new-blood.webp" class="poster">
+   <p class="pgmTitle">Dexter New Blood</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Dexter: New Blood é uma continuação direta da série original Dexter. A história se passa anos depois dos eventos finais da série principal e mostra Dexter Morgan vivendo uma nova vida sob outra identidade, em uma pequena e fria cidade do interior dos Estados Unidos.Ele tenta deixar o passado para trás e viver de forma pacífica, mas velhos impulsos e novos acontecimentos começam a ameaçar o frágil equilíbrio que ele construiu.A série mistura drama, mistério e suspense psicológico, com uma atmosfera mais sombria e introspectiva — explorando temas de redenção, culpa e a eterna luta de Dexter contra sua própria natureza.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+
+<div class="pgm" id="dexter-ressurection" tabindex="0">
+        <div class="less-info">
+    <img src="images/dexter-ressurection.webp" alt="dexter ressurrection" class="poster" tabindex="0">
+    <p class="pgmTitle">Dexter Ressurrection</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">9.1 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/dexter-ressurection.webp" class="poster">
+   <p class="pgmTitle">Dexter Ressurrection</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Dexter Morgan, o protagonista interpretado por Michael C. Hall, reaparece após os eventos da série anterior Dexter: New Blood. Ele acorda de um coma e descobre que seu filho, Harrison, está desaparecido. Determinado a encontrá-lo, ele vai para Nova York e se vê em um jogo de gato e rato — não apenas com seu passado, mas também com figuras que vieram para cobrar dívidas ou fechar assuntos pendentes.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="alice-in-boderland" tabindex="0">
+        <div class="less-info">
+    <img src="images/alice-in-the-boderland.webp" alt="alice in boderland" class="poster" tabindex="0">
+    <p class="pgmTitle">Alice in Boderland</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">7.8 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/alice-in-boderland.webp" class="poster">
+   <p class="pgmTitle">Alice in Boderland</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Alice in Borderland é uma série japonesa de suspense, ficção e sobrevivência. A história acompanha um jovem e seus amigos que, de repente, são transportados para uma versão misteriosamente deserta de Tóquio. Lá, eles são obrigados a participar de jogos perigosos e letais para sobreviver — cada um testando suas habilidades físicas, mentais e emocionais.A série combina ação intensa, mistério e drama psicológico, explorando como as pessoas reagem sob extrema pressão e o que significa realmente “viver”.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="ginny-e-georgia" tabindex="0">
+        <div class="less-info">
+    <img src="images/ginny-e-georgia.webp" alt="ginny e georgia" class="poster" tabindex="0">
+    <p class="pgmTitle">Ginny e Georgia</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">7.5 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/ginny-e-georgia.webp" class="poster">
+   <p class="pgmTitle">Ginny e Georgia</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Ginny & Georgia é uma série de drama e comédia que acompanha Georgia, uma mãe jovem e carismática, e Ginny, sua filha adolescente, enquanto tentam recomeçar a vida em uma nova cidade. Apesar da aparência leve e divertida, a série mergulha em temas mais profundos como amadurecimento, identidade, segredos familiares e traumas do passado.Misturando momentos emocionantes, humor e tensão, Ginny & Georgia mostra o contraste entre mãe e filha — duas pessoas muito diferentes tentando entender o que é “crescer” e o que é “recomeçar”.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="sobrenatural" tabindex="0">
+        <div class="less-info">
+    <img src="images/sobrenatural.webp" alt="sobrenatural" class="poster" tabindex="0">
+    <p class="pgmTitle">Sobrenatural</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.4 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/sobrenatural.webp" class="poster">
+   <p class="pgmTitle">Sobrenatural</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Sobrenatural (Supernatural) é uma série de ação, suspense e fantasia que acompanha os irmãos Sam e Dean Winchester. Eles viajam pelos Estados Unidos em seu icônico carro, o Chevy Impala 67, caçando criaturas sobrenaturais como fantasmas, demônios e monstros, enquanto enfrentam forças muito maiores do que imaginam.A série combina terror, drama familiar e mitologia, mostrando a forte ligação entre os irmãos e seus sacrifícios para proteger o mundo — e um ao outro.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="the-walking-dead" tabindex="0">
+        <div class="less-info">
+    <img src="images/the-walking-dead.webp" alt="the walking dead" class="poster" tabindex="0">
+    <p class="pgmTitle">The Walking Dead</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.1 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/the-walking-dead.webp" class="poster">
+   <p class="pgmTitle">The Walking Dead</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">The Walking Dead é uma série de drama, ação e terror pós-apocalíptico que acompanha um grupo de sobreviventes em um mundo devastado por uma infestação de zumbis. Liderados inicialmente por um ex-policial, eles precisam lutar não apenas contra os mortos, mas também contra os vivos — que, muitas vezes, se tornam ainda mais perigosos.A série explora sobrevivência, moralidade e humanidade em meio ao caos, mostrando como as pessoas mudam quando o mundo como conhecemos deixa de existir.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="the-last-of-us" tabindex="0">
+        <div class="less-info">
+    <img src="images/the-last-of-us.webp" alt="the last of us" class="poster" tabindex="0">
+    <p class="pgmTitle">The Last of Us</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.5 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/the-last-of-us.webp" class="poster">
+   <p class="pgmTitle">The Last of Us</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">The Last of Us é uma série de drama, ação e suspense pós-apocalíptico baseada no famoso jogo da Naughty Dog. A história se passa em um mundo devastado por um surto de fungos que transforma humanos em criaturas violentas.A trama acompanha Joel, um homem endurecido pelas perdas, e Ellie, uma adolescente com um segredo que pode ser a chave para a cura da humanidade. Juntos, eles cruzam um país destruído, enfrentando não apenas os infectados, mas também outros sobreviventes e os dilemas morais de um mundo sem regras.A série combina emoção, tensão e profundidade humana, destacando temas como amor, perda e o que significa sobreviver quando tudo parece perdido.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="meu-demonio-favorito" tabindex="0">
+        <div class="less-info">
+    <img src="images/meu-demonio-favorito.webp" alt="meu demônio favorito" class="poster" tabindex="0">
+    <p class="pgmTitle">Meu Demônio Favorito</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">7.8 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/meu-demonio-favorito.webp" class="poster">
+   <p class="pgmTitle">Meu Demônio Favorito</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">É uma série sul-coreana que mistura romance, fantasia e comédia. A história gira em torno de uma mulher poderosa e bem-sucedida que acaba se envolvendo com um demônio que misteriosamente perde seus poderes. Juntos, eles formam uma parceria improvável — cheia de brigas, química e momentos emocionantes — enquanto tentam entender o que está por trás dessa ligação sobrenatural.A série explora temas como amor, destino e redenção, com um toque leve e divertido.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="it-derry" tabindex="0">
+        <div class="less-info">
+    <img src="images/it-derry.webp" alt="it: welcome to derry" class="poster" tabindex="0">
+    <p class="pgmTitle">IT: Welcome to Derry</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.1 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/it-derry.webp" class="poster">
+   <p class="pgmTitle">IT: Welcome to Derry</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">It: Bem-Vindo a Derry (It: Welcome to Derry) é uma série de terror e suspense ambientada nos anos 1960, na misteriosa cidade de Derry, no Maine. A história mostra como o mal que aterroriza a cidade começa a despertar, enquanto estranhos desaparecimentos e eventos sobrenaturais passam a acontecer.A série serve como prequela dos filmes “It”, explorando as origens do terror e os segredos sombrios que rondam Derry, em uma atmosfera cheia de tensão, mistério e medo psicológico.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="a-verdade-oculta" tabindex="0">
+        <div class="less-info">
+    <img src="images/a-verdade-oculta.webp" alt="a verdade oculta" class="poster" tabindex="0">
+    <p class="pgmTitle">A Verdade Oculta</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">7.6 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/a-verdade-oculta.webp" class="poster">
+   <p class="pgmTitle">A Verdade Oculta</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">A Verdade Oculta é uma série de suspense que acompanha um jornalista que investiga segredos e mistérios escondidos em sua cidade. A cada episódio, ele descobre fatos perigosos e surpreendentes, mostrando o quanto buscar a verdade pode ser arriscado.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="weak-hero-class" tabindex="0">
+        <div class="less-info">
+    <img src="images/weak-hero-class.webp" alt="weak hero class" class="poster" tabindex="0">
+    <p class="pgmTitle">Weak Hero Class</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.4 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/weak-hero-class.webp" class="poster">
+   <p class="pgmTitle">Weak Hero Class</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">A série acompanha Yeon Si‑eun, um aluno modelo que está entre os melhores da turma mas fisicamente frágil. Mesmo assim, ele se recusa a se deixar intimidar pelos valentões da escola. Usando mente, estratégia e os recursos ao seu redor, ele entra numa batalha difícil para se proteger e ajudar outros — enquanto descobre o que realmente significa ser forte.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="skins" tabindex="0">
+        <div class="less-info">
+    <img src="images/skins.webp" alt="skins" class="poster" tabindex="0">
+    <p class="pgmTitle">Skins</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.2 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/skins.webp" class="poster">
+   <p class="pgmTitle">Skins</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Skins é uma série britânica de drama adolescente que acompanha um grupo de jovens enquanto enfrentam os desafios da adolescência. Cada episódio aborda temas como amizade, relacionamentos, família, drogas, sexualidade e conflitos pessoais, mostrando de forma crua e realista as escolhas e consequências da vida jovem.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="breaking-bad" tabindex="0">
+        <div class="less-info">
+    <img src="images/breaking-bad.webp" alt="breaking bad" class="poster" tabindex="0">
+    <p class="pgmTitle">Breaking Bad</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">9.5 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/breaking-bad.webp" class="poster">
+   <p class="pgmTitle">Breaking Bad</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Breaking Bad é uma série de drama e suspense que acompanha Walter White, um professor de química do ensino médio que, após ser diagnosticado com câncer, decide entrar para o mundo do tráfico de drogas para garantir o futuro financeiro de sua família.A história mostra sua transformação gradual de homem comum e íntegro para alguém envolvido em crimes, mentiras e violência. A série é marcada por tensão intensa, dilemas morais e desenvolvimento profundo de personagens, explorando até onde uma pessoa pode ir quando pressionada pelas circunstâncias.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="the-boys" tabindex="0">
+        <div class="less-info">
+    <img src="images/the-boys.webp" alt="the boys" class="poster" tabindex="0">
+    <p class="pgmTitle">The Boys</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.6 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/the-boys.webp" class="poster">
+   <p class="pgmTitle">The Boys</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">The Boys é uma série de ação, drama e sátira que se passa em um mundo onde super-heróis são celebridades corporativas, mas muitos deles abusam de seus poderes e cometem crimes.A trama acompanha um grupo chamado The Boys, que decide enfrentar esses super-heróis corruptos e expor a verdade sobre eles. A série mistura violência extrema, humor negro e críticas sociais, mostrando os lados mais sombrios do poder e da fama.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="stranger-things" tabindex="0">
+        <div class="less-info">
+    <img src="images/stranger-things.webp" alt="stranger things" class="poster" tabindex="0">
+    <p class="pgmTitle">Stranger Things</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.6 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/stranger-things.webp" class="poster">
+   <p class="pgmTitle">Stranger Things</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Stranger Things é uma série de suspense, ficção científica e aventura que se passa nos anos 1980 em uma pequena cidade dos Estados Unidos. A história começa com o desaparecimento de um garoto, levando seus amigos, familiares e autoridades a descobrirem acontecimentos misteriosos ligados a experimentos secretos e uma dimensão paralela conhecida como “Mundo Invertido”.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="a-historia-de-uma-serva" tabindex="0">
+        <div class="less-info">
+    <img src="images/a-historia-de-uma-serva.webp" alt="a história de uma serva" class="poster" tabindex="0">
+    <p class="pgmTitle">A História de uma Serva</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.3 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/a-historia-de-uma-serva.webp" class="poster">
+   <p class="pgmTitle">A História de uma Serva</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">A História de uma Serva (The Handmaid’s Tale) é uma série de drama e distopia baseada no romance de Margaret Atwood. Ela se passa em um futuro totalitário nos Estados Unidos, onde um regime chamado Gilead subjugou as mulheres, transformando algumas em servas chamadas “handmaids”, cujo único propósito é gerar filhos para as famílias poderosas.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="veep" tabindex="0">
+        <div class="less-info">
+    <img src="images/veep.webp" alt="veep" class="poster" tabindex="0">
+    <p class="pgmTitle">Veep</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.3 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/veep.webp" class="poster">
+   <p class="pgmTitle">Veep</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Veep é uma série de comédia política que acompanha Selina Meyer, uma política ambiciosa que começa como vice-presidente dos Estados Unidos e sonha com o cargo máximo. A série mostra os bastidores da política americana, focando em seus desafios, falhas e o caos do dia a dia enquanto ela e sua equipe tentam lidar com crises, escândalos e a eterna luta pelo poder.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="the-crown" tabindex="0">
+        <div class="less-info">
+    <img src="images/the-crown.webp" alt="the crown - a coroa" class="poster" tabindex="0">
+    <p class="pgmTitle">The Crown - A coroa</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.6 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/the-crown.webp" class="poster">
+   <p class="pgmTitle">The Crown - A coroa</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">The Crown é uma série de drama histórico que acompanha a vida da Rainha Elizabeth II e os eventos que marcaram seu reinado no Reino Unido. A história mostra tanto os desafios pessoais da monarca quanto os acontecimentos políticos e sociais que moldaram a história do país.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="a-casa-do-dragao" tabindex="0">
+        <div class="less-info">
+    <img src="images/a-casa-do-dragao.webp" alt="a casa do dragão" class="poster" tabindex="0">
+    <p class="pgmTitle">A casa do Dragão</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.3 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/a-casa-do-dragao.webp" class="poster">
+   <p class="pgmTitle">A casa do Dragão</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Casa do Dragão (House of the Dragon) é uma série de fantasia e drama épico, ambientada no mesmo universo de Game of Thrones, cerca de 200 anos antes dos eventos da série original. A história acompanha a Casa Targaryen, focando em suas intrigas políticas, disputas pelo trono e os conflitos familiares que ameaçam o reino de Westeros.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="euphoria" tabindex="0">
+        <div class="less-info">
+    <img src="images/euphoria.webp" alt="euphoria" class="poster" tabindex="0">
+    <p class="pgmTitle">Euphoria</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8.3 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/euphoria.webp" class="poster">
+   <p class="pgmTitle">Euphoria</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Euphoria é uma série de drama adolescente que acompanha um grupo de jovens lidando com amor, amizade, vícios, identidade e traumas pessoais. O foco principal é Rue, uma adolescente que luta contra o vício em drogas enquanto tenta encontrar seu lugar no mundo.A série é marcada por temas pesados, visuais estilizados e narrativa intensa, mostrando a vida adolescente de forma crua, emocional e muitas vezes perturbadora.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="game-of-thrones" tabindex="0">
+        <div class="less-info">
+    <img src="images/game-of-thrones.webp" alt="game of thrones" class="poster" tabindex="0">
+    <p class="pgmTitle">Game of Thrones</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">9.3 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/game-of-thrones.webp" class="poster">
+   <p class="pgmTitle">Game of Thrones</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Game of Thrones é uma série de fantasia épica e drama baseada nos livros de George R. R. Martin. A história se passa nos continentes fictícios de Westeros e Essos, onde várias famílias nobres disputam o Trono de Ferro, buscando poder, influência e sobrevivência.A série combina intrigas políticas, batalhas épicas, dragões, magia e personagens complexos, explorando temas como lealdade, ambição, honra e traição em um mundo implacável e cheio de surpresas.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="sexo-vida" tabindex="0">
+        <div class="less-info">
+    <img src="images/sexo-vida.webp" alt="sexo-vida" class="poster" tabindex="0">
+    <p class="pgmTitle">Sexo-Vida</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">7.5 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/sexo-vida.webp" class="poster">
+   <p class="pgmTitle">Sexo-Vida</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Sexo/Vida (Sex/Life) é uma série de drama e romance que acompanha Billie, uma mulher dividida entre a vida confortável como esposa e mãe e suas memórias de uma juventude cheia de liberdade, paixão e aventuras sexuais.A trama explora desejo, amor, tentação e escolhas pessoais, mostrando os conflitos internos de Billie enquanto ela tenta conciliar sua vida atual com os sentimentos e lembranças de seu passado intenso.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="vida-sexual-das-universitarias" tabindex="0">
+        <div class="less-info">
+    <img src="images/vida-sexual-das-universitarias.webp" alt="a vida sexual das universitárias" class="poster" tabindex="0">
+    <p class="pgmTitle">A Vida Sexual das Universitárias</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">7.7 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/vida-sexual-das-universitarias.webp" class="poster">
+   <p class="pgmTitle">A Vida Sexual das Universitárias</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">A Vida Sexual das Universitárias (The Sex Lives of College Girls) é uma série de comédia e drama que acompanha quatro jovens que estão começando a faculdade e dividem o mesmo dormitório. A trama explora amizade, descobertas pessoais, sexualidade, amor e os desafios de crescer em um ambiente novo e cheio de oportunidades — mas também cheio de confusões, segredos e situações engraçadas.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="girls" tabindex="0">
+        <div class="less-info">
+    <img src="images/girls.webp" alt="girls" class="poster" tabindex="0">
+    <p class="pgmTitle">Girls</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">7.4 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/girls.webp" class="poster">
+   <p class="pgmTitle">Girls</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Girls é uma série de comédia dramática que acompanha a vida de quatro jovens mulheres em Nova York enquanto enfrentam os desafios da vida adulta. A trama explora amizade, carreira, relacionamentos e autodescoberta, mostrando de forma realista e muitas vezes engraçada os altos e baixos de tentar se encontrar no mundo moderno.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="round-6" tabindex="0">
+        <div class="less-info">
+    <img src="images/round-6.webp" alt="round 6" class="poster" tabindex="0">
+    <p class="pgmTitle">Round 6</p>
+    <span>Categoria: Série</span>
+    <span id="rateText">8 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/round-6.webp" class="poster">
+   <p class="pgmTitle">Round 6</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Round 6 (Squid Game) é uma série sul-coreana de suspense e drama que acompanha pessoas endividadas e desesperadas que são convidadas a participar de jogos infantis mortais para ganhar um prêmio em dinheiro enorme.A série explora ganância, desigualdade social, sobrevivência e moralidade, mostrando até onde os seres humanos estão dispostos a ir quando pressionados por medo e necessidade. Ela combina tensão intensa, reviravoltas chocantes e crítica social, tornando cada episódio eletrizante.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="365-dias" tabindex="0">
+        <div class="less-info">
+    <img src="images/365-dias.webp" alt="365 dias" class="poster" tabindex="0">
+    <p class="pgmTitle">365 dias</p>
+    <span>Categoria: Filme</span>
+    <span id="rateText">3.3 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/365-dias.webp" class="poster">
+   <p class="pgmTitle">365 dias</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">365 Dias (365 Days) é uma série/filme de drama e romance erótico que acompanha Laura, uma mulher comum que é sequestrada por Massimo, um chefe da máfia siciliana. Ele dá a ela 365 dias para se apaixonar por ele, iniciando um relacionamento intenso, cheio de desejo, paixão e conflitos.A história explora amor, poder, sedução e obsessão, com foco em relacionamentos tóxicos e encontros carregados de tensão e sensualidade.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="my-mister" tabindex="0">
+        <div class="less-info">
+    <img src="images/my-mister.webp" alt="my mister" class="poster" tabindex="0">
+    <p class="pgmTitle">My Mister</p>
+    <span>Categoria: Dorama</span>
+    <span id="rateText">9.1 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/my-mister.webp" class="poster">
+   <p class="pgmTitle">My Mister</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">My Mister (나의 아저씨) é um drama sul-coreano de 2018 que conta a história de Park Dong-hoon, um homem de meia-idade que enfrenta dificuldades na vida e no trabalho, e Lee Ji-an, uma jovem que sofre com problemas financeiros e emocionais. Ao se encontrarem, eles desenvolvem uma conexão profunda e silenciosa, ajudando-se mutuamente a suportar a dor e encontrar esperança.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="reply-1988" tabindex="0">
+        <div class="less-info">
+    <img src="images/reply-1988.webp" alt="reply 1988" class="poster" tabindex="0">
+    <p class="pgmTitle">Reply 1988</p>
+    <span>Categoria: Dorama</span>
+    <span id="rateText">9.0 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/reply-1988.webp" class="poster">
+   <p class="pgmTitle">Reply 1988</p>
+   <p class="price">1.500Kz</p>
+    <div class="all-desc">
+    <p class="description">Reply 1988 (응답하라 1988) é um drama sul-coreano de 2015 que retrata a vida de cinco amigos e suas famílias que moram na mesma vizinhança em Seul, durante o final dos anos 1980. A história mistura amizade, amor, família e nostalgia, mostrando o cotidiano simples e caloroso da época.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="mr-sunhine" tabindex="0">
+        <div class="less-info">
+    <img src="images/mr-sunshine.webp" alt="um raio de sol" class="poster" tabindex="0">
+    <p class="pgmTitle">Um Raio de Sol</p>
+    <span>Categoria: Dorama</span>
+    <span id="rateText">8.7 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/mr-sunshine.webp" class="poster">
+   <p class="pgmTitle">Um Raio de Sol</p>
+   <p class="price">2.000Kz</p>
+    <div class="all-desc">
+    <p class="description">Mr. Sunshine (미스터 션샤인) é um drama histórico sul-coreano de 2018 que acompanha Eugene Choi, um coreano nascido escravizado que foge para os Estados Unidos e retorna à Coreia como oficial do exército americano no início do século XX. Lá, ele se envolve em um romance proibido com Go Ae-shin, uma nobre patriota, enquanto o país enfrenta turbulências políticas e a iminente dominação japonesa.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="alchemy-of-souls" tabindex="0">
+        <div class="less-info">
+    <img src="images/alchemy-of-souls.webp" alt="alquimia das almas" class="poster" tabindex="0">
+    <p class="pgmTitle">Alquimia das Almas</p>
+    <span>Categoria: Dorama</span>
+    <span id="rateText">8.7 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/alchemy-of-souls.webp" class="poster">
+   <p class="pgmTitle">Alquimia das Almas</p>
+   <p class="price">2.000Kz</p>
+    <div class="all-desc">
+    <p class="description">Alquimia das Almas (Alchemy of Souls / 환혼) é um drama de fantasia sul-coreano de 2022 que se passa no reino fictício de Daeho, onde magos manipulam a energia vital. A história segue Jang Uk, um jovem nobre com um destino selado, e Mu-deok, uma guerreira poderosa presa no corpo de uma mulher fraca. Juntos, eles embarcam em uma jornada de treinamento, segredos e amor, enquanto enfrentam forças mágicas perigosas.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="crash-landing-on-you" tabindex="0">
+        <div class="less-info">
+    <img src="images/crash-landing-on-you.webp" alt="crash landing on you" class="poster" tabindex="0">
+    <p class="pgmTitle">Crash Landing on You</p>
+    <span>Categoria: Dorama</span>
+    <span id="rateText">8.7 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/crash-landing-on-you.webp" class="poster">
+   <p class="pgmTitle">Crash Landing on You</p>
+   <p class="price">2.000Kz</p>
+    <div class="all-desc">
+    <p class="description">Crash Landing on You (사랑의 불시착) é um drama sul-coreano de 2019 que conta a história de Yoon Se-ri, uma rica empresária sul-coreana que acidentalmente cai de parapente na Coreia do Norte, e Ri Jeong-hyeok, um oficial norte-coreano que a encontra e decide protegê-la.Entre perigos, diferenças culturais e momentos emocionantes, os dois acabam se apaixonando.O drama é amado por seu romance intenso, humor cativante e química entre os protagonistas, além de mostrar com sensibilidade a divisão entre as duas Coreias.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="its-ok" tabindex="0">
+        <div class="less-info">
+    <img src="images/its-ok.webp" alt="tudo bem não ser normal" class="poster" tabindex="0">
+    <p class="pgmTitle">Tudo bem não ser normal</p>
+    <span>Categoria: Dorama</span>
+    <span id="rateText">8.6 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/its-ok.webp" class="poster">
+   <p class="pgmTitle">Tudo bem não ser normal</p>
+   <p class="price">2.000Kz</p>
+    <div class="all-desc">
+    <p class="description">Tudo Bem Não Ser Normal (It’s Okay to Not Be Okay / 사이코지만 괜찮아) é um drama sul-coreano de 2020 que conta a história de Moon Gang-tae, um cuidador em um hospital psiquiátrico que vive dedicado ao irmão autista, e Ko Moon-young, uma escritora de livros infantis com transtorno de personalidade antissocial.Quando seus caminhos se cruzam, eles começam uma jornada de cura emocional, amor e autodescoberta, enfrentando traumas do passado.O drama se destaca por sua estética única, enredo sensível e profunda abordagem sobre saúde mental e aceitação.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="goblin" tabindex="0">
+        <div class="less-info">
+    <img src="images/goblin.webp" alt="goblin ( o solitário e grande deus )" class="poster" tabindex="0">
+    <p class="pgmTitle">Goblin ( O Solitário e Grande Deus )</p>
+    <span>Categoria: Dorama</span>
+    <span id="rateText">8.6 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/goblin.webp" class="poster">
+   <p class="pgmTitle">Goblin ( O Solitário e Grande Deus )</p>
+   <p class="price">2.000Kz</p>
+    <div class="all-desc">
+    <p class="description">Goblin (Guardian: The Lonely and Great God / 도깨비) é um drama de fantasia e romance sul-coreano de 2016 que narra a história de Kim Shin, um guerreiro imortal amaldiçoado a viver eternamente como um goblin, e Ji Eun-tak, uma jovem capaz de ver espíritos que é destinada a ser sua noiva e libertá-lo da imortalidade.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="uma-advogada-extraordinaria" tabindex="0">
+        <div class="less-info">
+    <img src="images/uma-advogada-extraordinaria.webp" alt="uma advogada extraordinária" class="poster" tabindex="0">
+    <p class="pgmTitle">Uma Advogada Extraordinária</p>
+    <span>Categoria: Dorama</span>
+    <span id="rateText">8.6 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/uma-advogada-extraordinaria.webp" class="poster">
+   <p class="pgmTitle">Uma Advogada Extraordinária</p>
+   <p class="price">2.000Kz</p>
+    <div class="all-desc">
+    <p class="description">Uma Advogada Extraordinária (Extraordinary Attorney Woo / 이상한 변호사 우영우) é um drama sul-coreano de 2022 que acompanha Woo Young-woo, uma jovem advogada com autismo e QI altíssimo, que começa a trabalhar em um grande escritório de advocacia.Apesar de enfrentar preconceitos e desafios sociais, ela usa sua inteligência, memória excepcional e senso de justiça para resolver casos de forma única e inspiradora.O drama é elogiado por sua representação sensível do autismo, personagens cativantes e mensagens sobre empatia e inclusão.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="twenty-five" tabindex="0">
+        <div class="less-info">
+    <img src="images/twenty-five.webp" alt="vinte e cinco, vinte e um" class="poster" tabindex="0">
+    <p class="pgmTitle">Vinte e Cinco, Vinte e Um</p>
+    <span>Categoria: Dorama</span>
+    <span id="rateText">8.6 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/twenty-five.webp" class="poster">
+   <p class="pgmTitle">Vinte e Cinco, Vinte e Um</p>
+   <p class="price">2.000Kz</p>
+    <div class="all-desc">
+    <p class="description">Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One / 스물다섯 스물하나) é um drama sul-coreano de 2022 que conta a história de Na Hee-do, uma jovem esgrimista sonhadora, e Baek Yi-jin, um rapaz que tenta reconstruir a vida após a crise financeira de 1998.A trama acompanha seu crescimento, amizade e amor ao longo dos anos, mostrando como o tempo e as circunstâncias moldam suas vidas.É um drama nostálgico, sensível e emocional, celebrando a juventude, os sonhos e as dores de crescer.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+
+<div class="pgm" id="o-melhor-de-tudo" tabindex="0">
+        <div class="less-info">
+    <img src="images/o-melhor-de-tudo.webp" alt="o melhor de tudo" class="poster" tabindex="0">
+    <p class="pgmTitle">O Melhor de Tudo</p>
+    <span>Categoria: Dorama</span>
+    <span id="rateText">8,3 <img src='images/star.png' id="rate"></span>
+    
+</div>
+
+    <div class="more-info">
+    <img src="images/o-melhor-de-tudo.webp" class="poster">
+   <p class="pgmTitle">O Melhor de Tudo</p>
+   <p class="price">2.000Kz</p>
+    <div class="all-desc">
+    <p class="description">A work-aholic hotel manager, Shen Xi Fan, sofre de insônia e enxaquecas por causa do seu trabalho de alta intensidade. Ela procura tratamento e conhece o gentil médico de medicina tradicional chinesa He Su Ye. A relação entre eles começa como paciente-doutor, mas se transforma quando eles descobrem que moram no mesmo bairro. Ambos guardam cicatrizes de amores anteriores — Xi Fan é cautelosa após uma decepção, e Su Ye fechou o coração — e, aos poucos, movem-se de estranhos a confidentes, aprendendo a se curar mutuamente.</p>
+</div>
+<button class="ocult">Ocultar</button>
+<a class="talk-to-us">Fale Connosco</a>
+</div>
+</div> 
+
+<!--badodi-->
+
+
+
+
+</div>
+<center>
+<a id="solic" target="_blank">Não encontrou o que procurava? Fale com a gente e peça o que quiser assistir!</a>
+</center>
+
+
+
+
+
+<script src="script2.js"></script>
+</body>
+</html>
