@@ -199,14 +199,23 @@ post.innerText=poster.innerText.slice(0,14)+"...";
 const talk=document.querySelectorAll(".talk-to-us");
 
 talk.forEach(link=>{
-link.addEventListener("click", function (){
+link.addEventListener("click",async function (){
 let titulo=this.parentElement.querySelector(".pgmTitle");
+let prec=this.parentElement.querySelector(".price").innerText;
 let encT=encodeURIComponent(titulo.innerText);
 link.target="_blank";
 link.href="https://wa.me/926077400?text="+encodeURIComponent("Ola, gostaria de comprar: ")+ encT;
+let msg={
+    content: "=======\n**[-> 💸__Possivel Venda__💸 <-]**\n\n\`🎥Nome:\` **"+titulo.innerText+"**\n\`💰Preço:\` **"+prec+"**\n\n||@everyone||\n======="
+}
+await fetch("https://discord.com/api/webhooks/1437780468433948763/3l6_rtpwsddJXgwYnfhf0OYjAEFIytdxeKppXkMze_sBUdoef9hJtFEP0pI6eGNwbgPJ",{
+method:"POST",
+headers: {"Content-Type":"application/json"},
+body: JSON.stringify(msg)
+});
+});
+});
 
-});
-});
 
 
 const pCH=document.querySelectorAll(".catChooser p");
@@ -285,3 +294,6 @@ evTudo.style="text-decoration:none";
 });
 
 document.querySelector("#solic").href="https://wa.me/921257650?text="+encodeURIComponent("Olá, quero sugerir um filme.");
+
+
+
