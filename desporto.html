@@ -24,6 +24,7 @@
             --accent-hover: #00b3cc;
             --text-color: #ffffff;
             --text-muted: #a0a0aa;
+            --warning-color: #ffb300; /* Tom de ouro/alerta elegante */
         }
 
         body {
@@ -146,12 +147,59 @@
         .main-content {
             margin-top: 100px;
             padding: 2rem 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
+        /* --- Banner de Aviso de Transmissão --- */
+        .notice-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            width: 100%;
+            max-width: 1400px;
+            padding: 1rem;
+            margin-bottom: 2.5rem;
+            background: rgba(255, 179, 0, 0.06);
+            border: 1px solid rgba(255, 179, 0, 0.2);
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            text-align: center;
+        }
+
+        .notice-banner p {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #ffe082;
+            letter-spacing: 0.3px;
+        }
+
+        /* Ícone de carregamento piscante */
+        .notice-icon {
+            width: 10px;
+            height: 10px;
+            background-color: var(--warning-color);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 10px var(--warning-color);
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.3; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.1); box-shadow: 0 0 15px var(--warning-color); }
+            100% { opacity: 0.3; transform: scale(0.9); }
+        }
+
+        /* --- Grid de Players --- */
         .player-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
             gap: 3rem;
+            width: 100%;
             max-width: 1400px;
             margin: 0 auto;
         }
@@ -196,7 +244,7 @@
             border: none;
         }
 
-        /* --- Botão de Download Elegante --- */
+        /* --- Botão de Download --- */
         .btn-download {
             display: inline-flex;
             align-items: center;
@@ -217,22 +265,21 @@
         }
 
         .btn-download::before {
-            content: "⬇"; /* Ícone de seta para baixo */
+            content: "⬇";
             font-size: 1.1rem;
             transition: transform 0.3s ease;
         }
 
-        /* Efeito Hover do Botão */
         .btn-download:hover {
             background: var(--accent-color);
-            color: #000; /* Texto escuro para alto contraste no ciano */
+            color: #000;
             border-color: var(--accent-color);
             box-shadow: 0 8px 20px rgba(0, 229, 255, 0.3);
             transform: translateY(-2px);
         }
 
         .btn-download:hover::before {
-            transform: translateY(2px); /* Animação discreta da setinha descendo */
+            transform: translateY(2px);
         }
 
         .btn-download:active {
@@ -250,6 +297,8 @@
         @media (max-width: 768px) {
             .headers p { font-size: 1.3rem; }
             .main-content { margin-top: 80px; padding: 1.5rem 1rem; }
+            .notice-banner { margin-bottom: 1.8rem; padding: 0.8rem; }
+            .notice-banner p { font-size: 0.9rem; }
             .player-grid { gap: 2rem; }
             .btn-download { padding: 0.75rem 1.2rem; font-size: 0.9rem; }
         }
@@ -277,6 +326,12 @@
 </div>
 
 <div class="main-content">
+    
+    <div class="notice-banner">
+        <span class="notice-icon"></span>
+        <p>Aviso: Por favor, aguarde alguns segundos para a transmissão iniciar automaticamente.</p>
+    </div>
+
     <div class="player-grid">
         
         <div class="player-container">
@@ -284,7 +339,7 @@
             <div class="videplayer">
                 <iframe src="https://nossoplayeronlinehd.ink/tv/espn" allowfullscreen></iframe>
             </div>
-            <a href="catalogo.html" class="btn-download">Baixar Séries e Filmes</a>
+            <a href="#" class="btn-download">Baixar Séries e Filmes</a>
         </div>
 
         <div class="player-container">
@@ -292,7 +347,7 @@
             <div class="videplayer">
                 <iframe src="about:blank" allowfullscreen></iframe>
             </div>
-            <a href="catalogo.html" class="btn-download">Baixar Séries e Filmes</a>
+            <a href="#" class="btn-download">Baixar Séries e Filmes</a>
         </div>
 
         <div class="player-container">
@@ -300,7 +355,7 @@
             <div class="videplayer">
                 <iframe src="about:blank" allowfullscreen></iframe>
             </div>
-            <a href="catalogo.html" class="btn-download">Baixar Séries e Filmes</a>
+            <a href="#" class="btn-download">Baixar Séries e Filmes</a>
         </div>
 
     </div>
