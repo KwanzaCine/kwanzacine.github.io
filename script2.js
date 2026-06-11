@@ -204,7 +204,7 @@ let titulo=this.parentElement.querySelector(".pgmTitle");
 let prec=this.parentElement.querySelector(".price").innerText;
 let encT=encodeURIComponent(titulo.innerText);
 link.target="_blank";
-link.href="https://wa.me/926077400?text="+encodeURIComponent("Ola, gostaria de comprar: ")+ encT;
+link.href="https://wa.me/974239161?text="+encodeURIComponent("Ola, gostaria de comprar: ")+ encT;
 let msg={
     content: "=======\n**[-> 💸__Possivel Venda__💸 <-]**\n\n\`🎥Nome:\` **"+titulo.innerText+"**\n\`💰Preço:\` **"+prec+"**\n\n||@everyone||\n======="
 }
