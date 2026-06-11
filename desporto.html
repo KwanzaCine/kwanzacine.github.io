@@ -21,6 +21,7 @@
             --bg-color: #0a080d;
             --card-bg: #141118;
             --accent-color: #00e5ff;
+            --accent-hover: #00b3cc;
             --text-color: #ffffff;
             --text-muted: #a0a0aa;
         }
@@ -147,20 +148,18 @@
             padding: 2rem 5%;
         }
 
-        /* Grade organizada para os Players */
         .player-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 2.5rem;
+            gap: 3rem;
             max-width: 1400px;
             margin: 0 auto;
         }
 
-        /* Container Individual de cada Player */
         .player-container {
             display: flex;
             flex-direction: column;
-            gap: 0.8rem;
+            gap: 1rem;
         }
 
         .player-title {
@@ -184,12 +183,11 @@
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
-        /* Efeito de destaque ao passar o mouse */
         .player-container:hover .videplayer {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 
-                        0 0 30px rgba(0, 229, 255, 0.2);
-            border-color: rgba(0, 229, 255, 0.3);
+                        0 0 30px rgba(0, 229, 255, 0.15);
+            border-color: rgba(0, 229, 255, 0.2);
         }
 
         .videplayer iframe {
@@ -198,10 +196,53 @@
             border: none;
         }
 
-        /* --- Responsividade Ajustada --- */
+        /* --- Botão de Download Elegante --- */
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            width: 100%;
+            padding: 0.85rem 1.5rem;
+            background: rgba(255, 255, 255, 0.04);
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-download::before {
+            content: "⬇"; /* Ícone de seta para baixo */
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efeito Hover do Botão */
+        .btn-download:hover {
+            background: var(--accent-color);
+            color: #000; /* Texto escuro para alto contraste no ciano */
+            border-color: var(--accent-color);
+            box-shadow: 0 8px 20px rgba(0, 229, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-download:hover::before {
+            transform: translateY(2px); /* Animação discreta da setinha descendo */
+        }
+
+        .btn-download:active {
+            transform: translateY(0);
+        }
+
+        /* --- Responsividade --- */
         @media (max-width: 1024px) {
             .player-grid {
-                grid-template-columns: 1fr; /* Em telas menores, os players ficam em lista vertical */
+                grid-template-columns: 1fr;
                 max-width: 800px;
             }
         }
@@ -209,7 +250,8 @@
         @media (max-width: 768px) {
             .headers p { font-size: 1.3rem; }
             .main-content { margin-top: 80px; padding: 1.5rem 1rem; }
-            .player-grid { gap: 1.8rem; }
+            .player-grid { gap: 2rem; }
+            .btn-download { padding: 0.75rem 1.2rem; font-size: 0.9rem; }
         }
     </style>
 </head>
@@ -242,20 +284,23 @@
             <div class="videplayer">
                 <iframe src="https://nossoplayeronlinehd.ink/tv/espn" allowfullscreen></iframe>
             </div>
+            <a href="catalogo.html" class="btn-download">Baixar Séries e Filmes</a>
         </div>
 
         <div class="player-container">
-            <h3 class="player-title">SPORTV</h3>
+            <h3 class="player-title">Canal Alternativo 01</h3>
             <div class="videplayer">
-                <iframe src="https://nossoplayeronlinehd.ink/tv/sportv" allowfullscreen></iframe>
+                <iframe src="about:blank" allowfullscreen></iframe>
             </div>
+            <a href="catalogo.html" class="btn-download">Baixar Séries e Filmes</a>
         </div>
 
         <div class="player-container">
-            <h3 class="player-title">Cazé TV</h3>
+            <h3 class="player-title">Canal Alternativo 02</h3>
             <div class="videplayer">
-                <iframe src="https://nossoplayeronlinehd.ink/tv/caze1" allowfullscreen></iframe>
+                <iframe src="about:blank" allowfullscreen></iframe>
             </div>
+            <a href="catalogo.html" class="btn-download">Baixar Séries e Filmes</a>
         </div>
 
     </div>
