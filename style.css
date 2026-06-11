@@ -743,3 +743,18 @@ left:165px;
     text-decoration:underline;
     color:white;
 }
+.jogo{
+    background: cyan;
+    color:white;
+    font-weight:bold;
+    box-shadow:0px 0px 10px cyan, 0px 0px 20px cyan;
+    border:1px solid white;
+    margin:auto;
+    margin-top:100px;
+    width:300px;
+    padding:10px;
+}
+.jogo a{
+    color:black;
+    text-decoration:none;
+}
